@@ -1,9 +1,9 @@
 ﻿
-namespace XadrezConsole.tabuleiro
+namespace tabuleiro
 {
     class Tabuleiro
     {
-        public int Linhas {  get; set; }
+        public int Linhas { get; set; }
         public int Colunas { get; set; }
         private Peca[,] pecas;
 
@@ -14,9 +14,9 @@ namespace XadrezConsole.tabuleiro
             pecas = new Peca[Linhas, Colunas];
         }
 
-        public override string ToString()
+        public Peca peca(int linha, int coluna)
         {
-            return base.ToString();
+            return pecas[linha,coluna];
         }
     }
 }

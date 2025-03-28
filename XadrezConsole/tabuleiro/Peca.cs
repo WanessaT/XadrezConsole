@@ -1,5 +1,5 @@
 ﻿
-namespace XadrezConsole.tabuleiro
+namespace tabuleiro
 {
     class Peca
     {
